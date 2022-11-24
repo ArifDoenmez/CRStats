@@ -68,10 +68,10 @@ dunnettSDP <- function(d){
       sample_statistics[i, 'p.signif'] <- ''
     }
     else if(q_val <= 0.001){
-      sample_statistics[i, 'p.signif'] <- '***'
+      sample_statistics[i, 'p.signif'] <- '*'
     }
     else if(q_val <= 0.01){
-      sample_statistics[i, 'p.signif'] <- '**'
+      sample_statistics[i, 'p.signif'] <- '*'
     }
     else if(q_val <= 0.05){
       sample_statistics[i, 'p.signif'] <- '*'
